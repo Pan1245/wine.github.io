@@ -21,7 +21,7 @@ function PosPage() {
 
   React.useEffect(() => {
     let items = []
-    fetch(`https:api.sampleapis.com/wines/${subMenu}`)
+    fetch(`https://api.sampleapis.com/wines/${subMenu}`)
       .then(res => res.json())
       .then(wines => {
         for (let i = 0; i < wines.length; i++) {
